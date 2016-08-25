@@ -19,8 +19,6 @@ public class FDDepartment extends FDSubject {
         staff = new HashSet<FDUser>();
     }
 
-    private FDSubject superior;
-
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = false)
     private Set<FDDepartment> subDepartments;
 

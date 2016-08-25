@@ -1,19 +1,21 @@
 package com.fitechsoft.domain.base;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
+
+import javax.persistence.*;
 
 /**
  * Created by chun on 16/8/24.
  */
-@MappedSuperclass
-public class FDSubject extends AbstractEntity {
+@Entity
+@Inheritance(strategy = InheritanceType.JOINED)
+public abstract class FDSubject extends FDEntity {
 
 
     @Column(unique = true)
     private String identifier;
 
 
+    @ManyToOne(cascade = CascadeType.ALL)
     private FDSubject superior;
 
 
@@ -25,11 +27,11 @@ public class FDSubject extends AbstractEntity {
         this.identifier = identifier;
     }
 
-    protected String getIdentifier() {
+    public String getIdentifier() {
         return identifier;
     }
 
-    protected void setIdentifier(String identifier) {
+    public void setIdentifier(String identifier) {
         this.identifier = identifier;
     }
 

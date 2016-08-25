@@ -12,7 +12,7 @@ import javax.persistence.MappedSuperclass;
  * @author Chun Cao
  */
 @MappedSuperclass
-public class AbstractEntity {
+public class FDEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -41,7 +41,7 @@ public class AbstractEntity {
             return false;
         }
 
-        AbstractEntity that = (AbstractEntity) obj;
+        FDEntity that = (FDEntity) obj;
 
         return this.id.equals(that.getId());
     }
