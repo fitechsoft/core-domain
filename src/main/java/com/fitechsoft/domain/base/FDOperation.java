@@ -5,10 +5,7 @@ import javax.persistence.Entity;
 /**
  * Created by chun on 16/8/25.
  */
-@Entity
 public class FDOperation {
-
-
 
     private String opName;
 
