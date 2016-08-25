@@ -1,9 +1,13 @@
-package com.fitechsoft.domain.base;
+package com.fitechsoft.domain.subject;
+
+import com.fitechsoft.domain.base.FDSubject;
 
 import javax.persistence.Entity;
 
 /**
- * Created by chun on 16/8/25.
+ * This class represents all users in the real world.
+ *
+ * @author Chun Cao
  */
 @Entity
 public class FDUser extends FDSubject {

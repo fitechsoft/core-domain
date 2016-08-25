@@ -1,4 +1,6 @@
-package com.fitechsoft.domain.base;
+package com.fitechsoft.domain.subject;
+
+import com.fitechsoft.domain.base.FDSubject;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
@@ -7,7 +9,9 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * Created by chun on 16/8/25.
+ * The class represents departments in some institution.
+
+ * @author Chun Cao
  */
 @Entity
 public class FDDepartment extends FDSubject {

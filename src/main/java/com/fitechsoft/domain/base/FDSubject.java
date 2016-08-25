@@ -4,7 +4,9 @@ package com.fitechsoft.domain.base;
 import javax.persistence.*;
 
 /**
- * Created by chun on 16/8/24.
+ * This class represents all active subjects.
+ *
+ * @author Chun Cao
  */
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)

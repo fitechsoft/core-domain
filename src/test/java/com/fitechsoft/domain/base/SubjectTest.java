@@ -1,5 +1,8 @@
 package com.fitechsoft.domain.base;
 
+import com.fitechsoft.domain.subject.FDDepartment;
+import com.fitechsoft.domain.subject.FDInstitution;
+import com.fitechsoft.domain.subject.FDUser;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
