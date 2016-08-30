@@ -1,4 +1,4 @@
-package com.fitechsoft.domain.base;
+package com.fitechsoft.domain.core;
 
 
 import javax.persistence.*;
@@ -10,7 +10,7 @@ import javax.persistence.*;
  */
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
-public abstract class FDSubject extends FDEntity {
+public class FDSubject extends FDEntity {
 
 
     @Column(unique = true)
@@ -25,7 +25,7 @@ public abstract class FDSubject extends FDEntity {
 
     }
 
-    protected FDSubject(String identifier) {
+    public FDSubject(String identifier) {
         this.identifier = identifier;
     }
 

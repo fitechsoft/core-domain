@@ -1,4 +1,4 @@
-package com.fitechsoft.domain.base;
+package com.fitechsoft.domain.core;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
