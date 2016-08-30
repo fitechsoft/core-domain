@@ -6,9 +6,9 @@
 
     <parent>
         <groupId>com.fitechsoft</groupId>
-        <artifactId>fitech-backend</artifactId>
+        <artifactId>fitech-core</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../fitech-backend</relativePath>
+        <relativePath>../fitech-core</relativePath>
     </parent>
     <artifactId>domain-core</artifactId>
 
