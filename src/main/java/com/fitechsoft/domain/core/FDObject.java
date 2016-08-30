@@ -1,8 +1,6 @@
 package com.fitechsoft.domain.core;
 
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
+import javax.persistence.*;
 
 /**
  * This class represents all passive objects in the system.
@@ -12,5 +10,17 @@ import javax.persistence.InheritanceType;
 @Entity
 @Inheritance(strategy = InheritanceType.JOINED)
 public class FDObject extends FDEntity {
+
+    public String getOid() {
+        return oid;
+    }
+
+    public void setOid(String oid) {
+        this.oid = oid;
+    }
+
+    @Column(unique = true)
+    private String oid;
+
 
 }
