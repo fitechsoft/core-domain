@@ -10,7 +10,7 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../fitech-core</relativePath>
     </parent>
-    <artifactId>domain-core</artifactId>
+    <artifactId>core-domain</artifactId>
 
 
 </project>
