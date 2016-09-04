@@ -19,8 +19,6 @@ public class FDObject extends FDEntity {
         this.oid = oid;
     }
 
-    @Column(unique = true)
     private String oid;
-
 
 }
